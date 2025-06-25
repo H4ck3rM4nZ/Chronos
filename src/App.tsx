@@ -9,10 +9,16 @@ export function App() {
         <nav>
           <ul>
             <li>
-              <a href="">link1</a>
-              <a href="">link2</a>
-              <a href="">link3</a>
-              <a href="">link4</a>
+              <a href="">Link 1</a>
+            </li>
+            <li>
+              <a href="">Link 2</a>
+            </li>
+            <li>
+              <a href="">Link 3</a>
+            </li>
+            <li>
+              <a href="">Link 4</a>
             </li>
           </ul>
         </nav>
@@ -20,17 +26,19 @@ export function App() {
 
       <main>
         <article>
-          <section>00:00</section>
-
           <section>
             <form action="">
-              <label htmlFor="">Task</label>
-              <input type="text" name="" id="" />
-              <p>Ciclo...</p>
-              <section>
-                <p>Ciclos:</p>0 0 0 0 0 0
-              </section>
+              <fieldset>
+                <output>00:00</output>
+                <label htmlFor="">Task</label>
+                <input type="text" name="" id="" />
+                <p>Ciclo...</p>
+              </fieldset>
 
+              <fieldset>
+                <legend>Ciclos</legend>
+                <output>0 0 0 0 0 0</output>
+              </fieldset>
               <button type="button">Botao</button>
             </form>
           </section>
