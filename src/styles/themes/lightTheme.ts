@@ -1,32 +1,13 @@
-type Theme = {
-  colorPrimary: string
-  colorSecondary: string
+import type { ThemeType } from './themeTypes'
 
-  colorBg: string
-  colorSurface: string
-  colorText: string
-  colorMuted: string
+export const lightTheme: ThemeType = {
+  colorBg: '#F5F9FF',
+  colorText: '#1A1D25',
+  colorBgHeaderTable: '#C9CFE6',
+  colorBgTable: '#E1E7F4',
 
-  colorSuccess: string
-  colorError: string
-  colorWarning: string
-  colorInfo: string
+  colorSuccess: '#B8F2DC',
+  colorError: '#FCA5A5',
+  colorWarning: '#FEF08A',
+  colorInfo: '#BAE6FD',
 }
-
-export const lightTheme: Theme = {
-  /* Primárias */
-  colorPrimary: '#1e40af',
-  colorSecondary: '#8b5cf6',
-
-  /* Neutros */
-  colorBg: '#f9fafb',
-  colorSurface: '#ffffff',
-  colorText: '#111827',
-  colorMuted: '#6b7280',
-
-  /* Feedback */
-  colorSuccess: '#22c55e',
-  colorError: '#ef4444',
-  colorWarning: '#eab308',
-  colorInfo: '#3b82f6',
-} as const

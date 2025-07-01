@@ -1,13 +1,17 @@
+import { Timer } from 'lucide-react'
+import { Container } from './components/ui/Container'
+
 export function App() {
   return (
-    <>
-      <header>
-        <h1>
-          <a href="">LOGO</a>
-        </h1>
+    <Container>
+      <Container as="header">
+        <Container as="h1">
+          <Timer />
+          <a>Chronos</a>
+        </Container>
 
         <nav>
-          <ul>
+          <Container as="ul" direction="row">
             <li>
               <a href="">Link 1</a>
             </li>
@@ -20,36 +24,51 @@ export function App() {
             <li>
               <a href="">Link 4</a>
             </li>
-          </ul>
+          </Container>
         </nav>
-      </header>
+      </Container>
 
       <main>
         <article>
           <section>
-            <form action="">
+            <Container as="form" action="">
               <fieldset>
-                <output>00:00</output>
-                <label htmlFor="">Task</label>
-                <input type="text" name="" id="" />
-                <p>Ciclo...</p>
+                <Container>
+                  <output>00:00</output>
+                  <label>Task</label>
+                  <input type="text" />
+                  <p>
+                    Próximo ciclo é de: <time dateTime="00:00">0 min</time>
+                  </p>
+                </Container>
               </fieldset>
 
               <fieldset>
-                <legend>Ciclos</legend>
-                <output>0 0 0 0 0 0</output>
+                <Container>
+                  <legend>Ciclos</legend>
+                  <Container as="output" direction="row">
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                    <div>0</div>
+                  </Container>
+                </Container>
               </fieldset>
               <button type="button">Botao</button>
-            </form>
+            </Container>
           </section>
         </article>
       </main>
 
       <footer>
-        <section>
-          <p>&copy; 2025 MinhaEmpresa. Todos os direitos reservados.</p>
-          <p>
-            Desenvolvido por
+        <Container as="section">
+          <a>Entenda como funciona a técnica pomodoro</a>
+          <Container as="p" direction="row">
+            Desenvolvido por:
             <a
               href="https://github.com/H4ck3rM4nZ"
               target="_blank"
@@ -57,9 +76,9 @@ export function App() {
             >
               H4ck3rM4nZ
             </a>
-          </p>
-        </section>
+          </Container>
+        </Container>
       </footer>
-    </>
+    </Container>
   )
 }

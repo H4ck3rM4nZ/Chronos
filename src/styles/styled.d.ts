@@ -1,9 +1,7 @@
 /* eslint-disable */
-import { darkTheme } from './themes/darkTheme'
 import 'styled-components'
+import type { ThemeType } from './themes/themeTypes'
 
 declare module 'styled-components' {
-  type ThemeType = typeof darkTheme
-
   export interface DefaultTheme extends ThemeType {}
 }
