@@ -9,6 +9,7 @@ export const Container = styled.div.withConfig({
   display: flex;
   flex-direction: ${({ direction = 'column' }) => direction};
   gap: 10px;
+  color: ${({ theme }) => theme.colorText};
   justify-content: center;
   align-items: center;
 `
